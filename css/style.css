@@ -1,0 +1,64 @@
+/* layout */
+
+/* colors */
+
+/* components */
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc750;
+}
+
+.page {
+    margin: 70px 70px;
+    background-color: rgb(90, 56, 56);
+    min-height: 730px;
+    max-width: 1300px;
+}
+
+.sidebar-left, .sidebar-right {
+    width: 90px;
+    background-color: aliceblue;
+}
+
+nav li {
+    list-style: none;
+}
+
+.page--foyer {
+    width: 1120px;
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    grid-template-rows: repeat(3, 275px);
+}
+
+.card--item {
+    background-color: lightgreen;
+}
+
+.card--price {
+    background-color: #c2b0d7;
+    height: 55px;
+    width: 55px;
+}
+
+.nav--item-last {
+    transform: rotate(90deg);
+}
+
+.card--item:first-child {
+    background-color: #b6e4f5;
+    grid-area: 1/1/4/3 ;
+}
+
+.card--item:nth-child(3n+2) {
+    background-color: #ffced3;
+}
+
+.card--item:nth-child(3n+4) {
+    background-color: #f3f3f5;
+}
